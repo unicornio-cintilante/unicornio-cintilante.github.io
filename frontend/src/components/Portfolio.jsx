@@ -81,9 +81,17 @@ const Portfolio = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative h-48 bg-gradient-to-br from-rose-100 to-pink-100 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Icon className="w-20 h-20 text-rose-300 group-hover:scale-125 transition-transform duration-500" />
-                  </div>
+                  {project.image ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Icon className="w-20 h-20 text-rose-300 group-hover:scale-125 transition-transform duration-500" />
+                    </div>
+                  )}
                   <div className="absolute top-4 right-4">
                     <Badge className="bg-white text-rose-600 border-rose-200">
                       {project.date}
