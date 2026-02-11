@@ -121,8 +121,14 @@ const Portfolio = () => {
                   <Button
                     variant="ghost"
                     className="w-full text-rose-500 hover:text-rose-600 hover:bg-rose-50 transition-colors"
+                    onClick={() => {
+                      if (project.url) {
+                        window.open(project.url, '_blank');
+                      }
+                    }}
+                    disabled={!project.url}
                   >
-                    Ver Detalhes
+                    {project.url ? 'Ver Projeto' : 'Ver Detalhes'}
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
