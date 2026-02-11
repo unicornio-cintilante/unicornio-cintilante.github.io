@@ -33,12 +33,24 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               A <span className="font-semibold text-rose-600">Coders</span> é muito importante para mim porque aprendo muitas coisas novas, e sinto que o futuro vai ser muito baseado na programação.
             </p>
-            <div className="bg-gradient-to-r from-rose-50 to-pink-50 p-6 rounded-2xl border-l-4 border-rose-500">
-              <div className="flex items-start gap-3">
-                <Sparkles className="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="font-semibold text-gray-800 mb-2">O Meu Maior Sonho</p>
-                  <p className="text-gray-700">Ter um futuro brilhante, repleto de alegria, amor e paz.</p>
+            <div className="space-y-4">
+              <div className="bg-gradient-to-r from-rose-50 to-pink-50 p-6 rounded-2xl border-l-4 border-rose-500">
+                <div className="flex items-start gap-3">
+                  <Sparkles className="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-2">O Meu Maior Sonho</p>
+                    <p className="text-gray-700">Ter um futuro brilhante, repleto de alegria, amor e paz.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-2xl border-l-4 border-pink-400">
+                <div className="flex items-start gap-3">
+                  <Heart className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-800 mb-2">O Meu Maior Medo</p>
+                    <p className="text-gray-700">O futuro… Tenho medo de não ser um exemplo para alguém, não orgulhar as pessoas que mais amo e não aproveitar a vida ao máximo.</p>
+                  </div>
                 </div>
               </div>
             </div>
