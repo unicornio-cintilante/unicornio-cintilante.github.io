@@ -2,12 +2,23 @@
 export const mockProjects = [
   {
     id: 1,
+    title: 'Viagem pelos Números',
+    description: 'O jogo de apanhar números pares enquanto viajas por vários mapas.',
+    category: 'coding',
+    tags: ['Lovable', 'JavaScript', 'IA'],
+    date: '2026',
+    image: 'https://customer-assets.emergentagent.com/job_coders-unicorn/artifacts/39tjugxl_Screenshot%202026-02-11%20at%2018.21.12.png',
+    url: 'https://viagempelosnumeros.lovable.app/',
+  },
+  {
+    id: 2,
     title: 'Projeto Python Avançado',
     description: 'Desenvolvimento de uma aplicação interativa em Python com funcionalidades criativas.',
     category: 'coding',
     tags: ['Python', 'Coders', 'Programação'],
     date: '2025',
     image: null,
+    url: null,
   },
   {
     id: 2,
