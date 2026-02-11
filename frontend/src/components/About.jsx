@@ -25,46 +25,53 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
+        <div className="space-y-8 mb-16">
+          {/* Texto Introdutório */}
+          <div className="max-w-4xl mx-auto text-center space-y-4">
             <p className="text-lg text-gray-700 leading-relaxed">
               Olá! Sou uma pré-adolescente com muitas paixões e sonhos. Adoro passar tempo com pessoas de que gosto e aproveitar ao máximo cada momento que tenho.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               A <span className="font-semibold text-rose-600">Coders</span> é muito importante para mim porque aprendo muitas coisas novas, e sinto que o futuro vai ser muito baseado na programação.
             </p>
-            <div className="space-y-4">
-              <div className="bg-gradient-to-r from-rose-50 to-pink-50 p-6 rounded-2xl border-l-4 border-rose-500">
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-gray-800 mb-2">O Meu Maior Sonho</p>
-                    <p className="text-gray-700">Ter um futuro brilhante, repleto de alegria, amor e paz.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-gradient-to-r from-pink-50 to-rose-50 p-6 rounded-2xl border-l-4 border-pink-400">
-                <div className="flex items-start gap-3">
-                  <Heart className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-gray-800 mb-2">O Meu Maior Medo</p>
-                    <p className="text-gray-700">O futuro… Tenho medo de não ser um exemplo para alguém, não orgulhar as pessoas que mais amo e não aproveitar a vida ao máximo.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div className="bg-gradient-to-br from-rose-100 to-pink-100 p-8 rounded-3xl">
-            <div className="bg-white p-6 rounded-2xl shadow-lg">
-              <h3 className="font-bold text-xl text-gray-800 mb-4 flex items-center gap-2">
-                <Users className="w-6 h-6 text-rose-500" />
-                O Meu Conselho
-              </h3>
-              <p className="text-gray-700 italic leading-relaxed">
-                "Aproveita o tempo que tens e com quem tens, pois nunca se sabe quando será a última vez."
-              </p>
+          {/* Cartões: Sonho, Medo e Conselho */}
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-6 rounded-2xl border-2 border-rose-200 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center gap-3">
+                <div className="p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
+                  <Sparkles className="w-8 h-8 text-rose-500" />
+                </div>
+                <h3 className="font-bold text-xl text-gray-800">O Meu Maior Sonho</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Ter um futuro brilhante, repleto de alegria, amor e paz.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-pink-50 to-rose-50 p-6 rounded-2xl border-2 border-pink-200 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center gap-3">
+                <div className="p-3 bg-gradient-to-br from-pink-100 to-rose-100 rounded-full">
+                  <Heart className="w-8 h-8 text-pink-500" />
+                </div>
+                <h3 className="font-bold text-xl text-gray-800">O Meu Maior Medo</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  O futuro… Tenho medo de não ser um exemplo para alguém, não orgulhar as pessoas que mais amo e não aproveitar a vida ao máximo.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-rose-50 to-pink-50 p-6 rounded-2xl border-2 border-rose-200 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex flex-col items-center text-center gap-3">
+                <div className="p-3 bg-gradient-to-br from-rose-100 to-pink-100 rounded-full">
+                  <Users className="w-8 h-8 text-rose-500" />
+                </div>
+                <h3 className="font-bold text-xl text-gray-800">O Meu Conselho</h3>
+                <p className="text-gray-700 italic leading-relaxed">
+                  "Aproveita o tempo que tens e com quem tens, pois nunca se sabe quando será a última vez."
+                </p>
+              </div>
             </div>
           </div>
         </div>
