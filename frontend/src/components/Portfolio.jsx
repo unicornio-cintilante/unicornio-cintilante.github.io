@@ -130,11 +130,13 @@ const Portfolio = () => {
                     onClick={() => {
                       if (project.url) {
                         window.open(project.url, '_blank');
+                      } else if (project.fullText) {
+                        setSelectedProject(project);
                       }
                     }}
-                    disabled={!project.url}
+                    disabled={!project.url && !project.fullText}
                   >
-                    {project.url ? 'Ver Projeto' : 'Ver Detalhes'}
+                    {project.url ? 'Ver Projeto' : project.fullText ? 'Ler Texto' : 'Ver Detalhes'}
                     <ExternalLink className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
