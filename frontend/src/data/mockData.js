@@ -27,7 +27,7 @@ export const mockProjects = [
     category: 'writing',
     tags: ['Escrita', 'Reflexão', 'Criatividade'],
     date: '2025',
-    image: null,
+    image: 'https://customer-assets.emergentagent.com/job_coders-unicorn/artifacts/qx2efh7m_Gemini_Generated_Image_splwllsplwllsplw.png',
     url: null,
     fullText: `No 1º dia de aulas encontrei vários amigos que já não via há algum tempo, tal como revi alguns que vi nas férias e não estive com aqueles que antes eram quem eu mais queria ver depois das férias.
 
