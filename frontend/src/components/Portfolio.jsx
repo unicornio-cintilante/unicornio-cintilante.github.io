@@ -8,6 +8,7 @@ import { mockProjects } from '../data/mockData';
 
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = [
     { id: 'all', label: 'Todos', icon: Sparkles },
