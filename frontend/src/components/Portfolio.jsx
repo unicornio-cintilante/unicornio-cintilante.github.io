@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Code, Calculator, PenTool, Volleyball, Plane, Award, ExternalLink, Sparkles } from 'lucide-react';
+import { Code, Calculator, PenTool, Volleyball, Plane, Award, ExternalLink, Sparkles, X } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog';
 import { mockProjects } from '../data/mockData';
 
 const Portfolio = () => {
