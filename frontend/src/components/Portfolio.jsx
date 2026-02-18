@@ -153,6 +153,34 @@ const Portfolio = () => {
             <p className="text-gray-600 text-lg">Nenhum projeto encontrado nesta categoria.</p>
           </div>
         )}
+
+        {/* Dialog for displaying full text */}
+        <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
+          <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+            <DialogHeader>
+              <DialogTitle className="text-2xl font-bold text-gray-800 font-['Fredoka']">
+                {selectedProject?.title}
+              </DialogTitle>
+              <DialogDescription className="flex flex-wrap gap-2 mt-2">
+                {selectedProject?.tags.map((tag, i) => (
+                  <Badge key={i} variant="secondary" className="bg-rose-100 text-rose-700">
+                    {tag}
+                  </Badge>
+                ))}
+              </DialogDescription>
+            </DialogHeader>
+            <div className="mt-6 prose prose-rose max-w-none">
+              <div className="text-gray-700 leading-relaxed whitespace-pre-line">
+                {selectedProject?.fullText}
+              </div>
+              <div className="mt-8 p-4 bg-rose-50 rounded-lg border-l-4 border-rose-500">
+                <p className="text-sm text-gray-600 italic">
+                  © {selectedProject?.date} - Unicornio._.cintilante - Todos os direitos reservados
+                </p>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
