@@ -15,13 +15,13 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left side - Text content */}
-          <div className="flex-1 text-left space-y-6 animate-fadeInUp">
+          <div className="flex-1 text-center md:text-left space-y-6 animate-fadeInUp">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-100 rounded-full text-rose-600 font-medium">
               <Sparkles className="w-4 h-4" />
               <span>Bem-vinda ao meu espaço</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-800 font-['Fredoka'] leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 font-['Fredoka'] leading-tight break-words max-w-full">
               Olá! Sou a<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-pink-600">
                 Unicornio._.cintilante
