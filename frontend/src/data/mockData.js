@@ -7,7 +7,8 @@ export const mockProjects = [
     category: 'coding',
     tags: ['Lovable', 'JavaScript', 'IA'],
     date: '2026',
-    image: 'https://customer-assets.emergentagent.com/job_coders-unicorn/artifacts/39tjugxl_Screenshot%202026-02-11%20at%2018.21.12.png',
+    // updated to use the local screenshot asset provided by the user
+    image: '/viagem-pelos-numeros.png',
     url: 'https://viagempelosnumeros.lovable.app/',
   },
   {
